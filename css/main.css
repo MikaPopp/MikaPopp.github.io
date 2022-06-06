@@ -1,0 +1,14 @@
+input[type=number]
+{
+  width: 3%;
+}
+
+.inputs label {
+  width: 9%;
+  display: inline-block;
+  text-align: center;
+}
+
+h1 {
+ text-align:center;
+}
