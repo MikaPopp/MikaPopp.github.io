@@ -1,84 +1,47 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
-    <title>Phasmophobia Save File Editor</title>
-  </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Mikazuo.xyz</title>
+  </head> 
   <body>
-    <h1>Phasmophobia Save File Editor</h1>
-    <h2>Step 1: Upload your save file</h2>
-    <input type="file" onchange="loadSaveFile(this.files[0])">
-    <h2>Step 2: Change your desired values</h2>
-    <div class="inputs">
-      <label for="level">Level:</label>
-      <input disabled type="number" id="level" name="level" onchange="inputChange(this)">
-      <label for="candle">Candle:</label>
-      <input disabled type="number" id="candle" name="candle" onchange="inputChange(this)">
-      <label for="sage">Sage:</label>
-      <input disabled type="number" id="sage" name="sage" onchange="inputChange(this)">
-      <label for="thermometer">Thermometer:</label>
-      <input disabled type="number" id="thermometer" name="thermometer" onchange="inputChange(this)">
-      <br>
-        <label for="money">Money:</label>
-        <input disabled type="number" id="money" name="money" onchange="inputChange(this)">
-        <label for="uvflashlight">UV Flashlight:</label>
-        <input disabled type="number" id="uvflashlight" name="uvflashlight" onchange="inputChange(this)">
-        <label for="tripod">Tripod:</label>
-        <input disabled type="number" id="tripod" name="tripod" onchange="inputChange(this)">
-        <label for="ghostwriting">Ghost Writing Book:</label>
-        <input disabled type="number" id="ghostwriting" name="ghostwriting" onchange="inputChange(this)">
-      <br>
-        <label for="emf">EMF Reader:</label>
-        <input disabled type="number" id="emf" name="emf" onchange="inputChange(this)">
-        <label for="crucifix">Crucifix:</label>
-        <input disabled type="number" id="crucifix" name="crucifix" onchange="inputChange(this)">
-        <label for="strongflashlight">Strong Flashlight:</label>
-        <input disabled type="number" id="strongflashlight" name="strongflashlight" onchange="inputChange(this)">
-        <label for="irlightsensor">IR Light Sensor:</label>
-        <input disabled type="number" id="irlightsensor" name="irlightsensor" onchange="inputChange(this)">
-      <br>
-        <label for="flashlight">Flashlight:</label>
-        <input disabled type="number" id="flashlight" name="flashlight" onchange="inputChange(this)">
-        <label for="dslrcamera">DSLR Camera:</label>
-        <input disabled type="number" id="dslrcamera" name="dslrcamera" onchange="inputChange(this)">
-        <label for="motionsensor">Motion Sensor:</label>
-        <input disabled type="number" id="motionsensor" name="motionsensor" onchange="inputChange(this)">
-        <label for="parabolicmicrophone">Parabolic Microphone:</label>
-        <input disabled type="number" id="parabolicmicrophone" name="parabolicmicrophone" onchange="inputChange(this)">
-      <br>
-        <label for="camera">Camera:</label>
-        <input disabled type="number" id="camera" name="camera" onchange="inputChange(this)">
-        <label for="evprecorder">EVP Recorder:</label>
-        <input disabled type="number" id="evprecorder" name="evprecorder" onchange="inputChange(this)">
-        <label for="soundsensor">Sound Sensor:</label>
-        <input disabled type="number" id="soundsensor" name="soundsensor" onchange="inputChange(this)">
-        <label for="glowstick">Glowstick:</label>
-        <input disabled type="number" id="glowstick" name="glowstick" onchange="inputChange(this)">
-      <br>
-        <label for="lighter">Lighter:</label>
-        <input disabled type="number" id="lighter" name="lighter" onchange="inputChange(this)">
-        <label for="salt">Salt:</label>
-        <input disabled type="number" id="salt" name="salt" onchange="inputChange(this)">
-        <label for="sanitypills">Sanity Pills:</label>
-        <input disabled type="number" id="sanitypills" name="sanitypills" onchange="inputChange(this)">
-        <label for="headmountedcamera">Head Mounted Camera:</label>
-        <input disabled type="number" id="headmountedcamera" name="headmountedcamera" onchange="inputChange(this)">
-      <pre hidden id="output"></pre>
-    </div>
-    <h2>Step 3: Download the new save file</h2>
-    <button disabled onclick="JsonToSaveFile()" id="download">Download</button>
-    <h2>Step 4: Apply the save file</h2>
-    <p1>1. Open the game</p1>
-    <br>
-    <p1>2. Navigate to "...\AppData\LocalLow\Kinetic Games\Phasmophobia"</p1>
-    <br>
-    <p1>3. Delete "SaveFile.es3" and backup "saveData.txt"</p1>
-    <br>
-    <p1>4. Put in your new saveData.txt</p1>
-    <br>
-    <p1>5. Restart the game</p1>
-    <h2>Optional: Video guide for Step 4</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/j6hJoLluqyg"></iframe>  
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffa29c">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="https://avatars.githubusercontent.com/u/22012980?v=4" width="30" height="30" class="d-inline-block align-top" alt="">
+            Mikazuo.xyz
+          </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Links</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Applications
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="http://asf.mikazuo.xyz:1242">ArchiSteamFarm</a>
+                  <a class="dropdown-item" href="applications/phasmophobia.html">Phasmophobia Save Editor</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">More</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

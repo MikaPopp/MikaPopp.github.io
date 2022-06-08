@@ -47,7 +47,6 @@ function JsonToSaveFile() {
 //Set the item value to the save file
 function inputChange(element) {
   var itemValue = document.getElementById(element.id).value;
-  alert(itemValue);
   if(element.id === "level") {
     saveFileClearJson.IntData[items.indexOf(element.id)].Value = JSON.parse('"'+itemValue*100+'"');
   } else {
