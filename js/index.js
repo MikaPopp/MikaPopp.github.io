@@ -16,6 +16,9 @@ $(document).ready(function () {
 });
 
 function showAboutMe() {
+    $("#about-me-h1").css("visibility", "hidden");
+    $("#about-me-h2").css("visibility", "hidden");
+    $("#about-me-p").css("visibility", "hidden");
     $(".test").fadeOut(500, 0);
     $(".content-container-about-me").fadeTo(500, 1);
     $(".test").css("opacity", 0);
@@ -44,5 +47,17 @@ function changePageLinks() {
 function changePageAboutMe() {
     if (!$("#about-me-nav").hasClass("active")) {
         showAboutMe();
+    }
+}
+
+function showMore() {
+    if ($("#about-me-h1").css("visibility") == "hidden" || $("#about-me-h1").css("opacity") == 0) {
+        $("#about-me-h1").css('visibility', 'visible').animate({ opacity: 1.0 }, 700);
+        $("#about-me-h2").css('visibility', 'visible').animate({ opacity: 1.0 }, 700);
+        $("#about-me-p").css('visibility', 'visible').animate({ opacity: 1.0 }, 700);
+    } else {
+        $("#about-me-h1").animate({ opacity: 0 }, 700);
+        $("#about-me-h2").animate({ opacity: 0 }, 700);
+        $("#about-me-p").animate({ opacity: 0 }, 700);
     }
 }

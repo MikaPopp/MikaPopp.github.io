@@ -27,6 +27,24 @@
     color: #e9afd3;
 }
 
+.more-button {
+    position: fixed;
+    left: 45%;
+    top: 41%;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    color: #F1A5A0;
+    font-size: 20px;
+}
+
+.more-button:focus {
+    outline: none;
+}
+
 .navbar {
     animation-name: fading;
     animation-timing-function: ease-in;
@@ -78,6 +96,9 @@
     margin-left: 26%;
     margin-bottom: 0;
     padding-bottom: 0;
+    margin-top: 2%;
+    visibility: hidden;
+    opacity: 0.0;
 }
 
 .content-container-about-me h2,
@@ -91,6 +112,8 @@
     margin-left: 26%;
     margin-bottom: 0;
     padding-bottom: 0;
+    visibility: hidden;
+    opacity: 0.0;
 }
 
 .content-container-about-me p,
@@ -104,7 +127,9 @@
     animation-duration: 2s;
     color: #e9afd3;
     font-family: sans-serif;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.4); 
+    visibility: hidden;
+    opacity: 0.0;
 }
 
 .rounded-circle {
