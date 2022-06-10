@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    if ($(window).width() < 992) {
+        $("#navbar-main").addClass("navbar-light");
+    }
+    else {
+        $("#navbar-main").removeClass("navbar-light");
+    }
     $(document).on('wheel', function (event) {
         if (event.originalEvent.deltaY !== 0) {
             if (event.originalEvent.deltaY < 0) {
@@ -13,6 +19,15 @@ $(document).ready(function () {
             }
         }
     });
+});
+
+$(window).resize(function () {
+    if ($(window).width() < 992) {
+        $("#navbar-main").addClass("navbar-light");
+    }
+    else {
+        $("#navbar-main").removeClass("navbar-light");
+    }
 });
 
 function showAboutMe() {

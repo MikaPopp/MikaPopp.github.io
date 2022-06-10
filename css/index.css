@@ -4,20 +4,25 @@
 }
 
 @keyframes moving {
-    0%   {left: 0%; top: 95%; opacity: 1;}
-    25%  {transform: rotate(360deg);}
-    50%  {left: 20%; top: 95%;}
-    75%  {left: 0%; top: 95%;}
-    100% {left: 0%; top: 95%;}
+    33%  {transform: rotate(360deg);}
+    66%  {transform: rotate(-360deg);}
+    99%  {transform: rotate(0deg);}
 }
 
+@media (max-width: 991px) {
+    .content-container-about-me {
+      margin-top: 5%;
+    }
+  }
+
 #test {
+    display: block;
     animation: moving 4s;
     animation-delay: 4s;
     animation-timing-function: ease-in-out;
-    position: absolute;
-    left: 0%;
-    top: 95%;
+    margin-right: auto;
+    margin-top: auto;
+    margin-top: 5%;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -29,8 +34,8 @@
 
 .more-button {
     display: block;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 1%;
     background-color: rgb(0, 0, 0, 0.4);
     background-repeat: no-repeat;
@@ -131,7 +136,7 @@
     animation-duration: 2s;
     color: #e9afd3;
     font-family: sans-serif;
-    background-color: rgb(0, 0, 0, 0.4); 
+    background-color: rgb(0, 0, 0, 0.4);
     visibility: hidden;
     opacity: 0.0;
 }
