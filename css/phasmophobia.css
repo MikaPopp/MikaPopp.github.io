@@ -1,5 +1,4 @@
-input[type=number]
-{
+input[type=number] {
   width: 3%;
 }
 
@@ -10,5 +9,5 @@ input[type=number]
 }
 
 h1 {
- text-align:center;
+  text-align: center;
 }
