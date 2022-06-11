@@ -13,6 +13,9 @@
     .content-container-about-me {
       margin-top: 5%;
     }
+    .navbar {
+        max-height: 6.3%;
+    }
   }
 
 #test {
