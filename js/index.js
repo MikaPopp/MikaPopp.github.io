@@ -8,7 +8,7 @@ $(document).ready(function () {
     $(document).on('wheel', function (event) {
         if (event.originalEvent.deltaY !== 0) {
             if (event.originalEvent.deltaY < 0) {
-                if ($(".test").css("opacity") == 1) {
+                if ($(".links-container").css("opacity") == 1) {
                     showAboutMe();
                 }
             }
@@ -34,9 +34,9 @@ function showAboutMe() {
     $("#about-me-h1").css("visibility", "hidden");
     $("#about-me-h2").css("visibility", "hidden");
     $("#about-me-p").css("visibility", "hidden");
-    $(".test").fadeOut(500, 0);
+    $(".links-container").fadeOut(500, 0);
     $(".content-container-about-me").fadeTo(500, 1);
-    $(".test").css("opacity", 0);
+    $(".links-container").css("opacity", 0);
     document.title = "Mikazuo | About Me";
     $("#links-nav").removeClass("active");
     $("#about-me-nav").addClass("active");
@@ -44,10 +44,10 @@ function showAboutMe() {
 
 function showLinks() {
     $(".content-container-about-me").fadeOut(500, 0);
-    $(".test").fadeTo(500, 1);
-    $(".test").css("opacity", 1);
+    $(".links-container").fadeTo(500, 1);
+    $(".links-container").css("opacity", 1);
     $(".content-container-about-me").css("opacity", 0);
-    $(".test").css("visibility", "visible");
+    $(".links-container").css("visibility", "visible");
     document.title = "Mikazuo | Links";
     $("#about-me-nav").removeClass("active");
     $("#links-nav").addClass("active");
