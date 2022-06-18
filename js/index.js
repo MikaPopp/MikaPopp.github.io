@@ -5,17 +5,19 @@ $(document).ready(function () {
     else {
         $("#navbar-main").removeClass("navbar-light");
     }
-    $(document).on('wheel', function (event) {
+    $(document).on('wheel', function (event) {    
         if (event.originalEvent.deltaY !== 0) {
             if (event.originalEvent.deltaY < 0) {
-                if ($(".links-container").css("opacity") == 1) {
-                    showAboutMe();
-                }
+                //if ($(window).scrollTop()==0) {
+                    if ($(".links-container").css("opacity") == 1) {
+                        showAboutMe();
+                    }
+                //}
             }
             else {
-                if ($(".content-container-about-me").css("opacity") == 1) {
-                    showLinks();
-                }
+                    if ($(".content-container-about-me").css("opacity") == 1) {
+                        showLinks();
+                    }
             }
         }
     });
