@@ -8,11 +8,9 @@ $(document).ready(function () {
     $(document).on('wheel', function (event) {    
         if (event.originalEvent.deltaY !== 0) {
             if (event.originalEvent.deltaY < 0) {
-                //if ($(window).scrollTop()==0) {
                     if ($(".links-container").css("opacity") == 1) {
                         showAboutMe();
                     }
-                //}
             }
             else {
                     if ($(".content-container-about-me").css("opacity") == 1) {
