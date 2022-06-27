@@ -165,7 +165,8 @@
     padding-bottom: 0.5%;
 }
 
-.container-round-links p {
+.container-round-links p,
+.container-round-links-two p {
     display: inline-block;
     font-size: 1.5em;
     text-align: center;
@@ -175,11 +176,27 @@
     font-family: sans-serif;
 }
 
+.container-round-links-two {
+    margin-top: 1%;
+}
+
 .link-one,
 .link-two,
 .link-three {
+    border-radius: 25px;
     display: inline-block;
     background-color: rgb(0, 0, 0, 0.4);
     height: 350px;
     width: 350px;
+}
+
+.link-four,
+.link-five,
+.link-six {
+    border-radius: 25px;
+    display: inline-block;
+    background-color: rgb(0, 0, 0, 0.4);
+    height: 350px;
+    width: 350px;
+    padding-top: 0.3%;
 }
