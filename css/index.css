@@ -22,16 +22,10 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-height: 833px) and (min-width: 1059px) {
     #scroll-label {
         display: none;
     }
-}
-
-@media (max-width: 991px) {
-    .content-container-about-me {
-        margin-top: 5%;
-    }
 
     .content-container-about-me,
     .links-container {
@@ -41,18 +35,17 @@
         text-align: center;
         padding-top: 5%;
         position: absolute;
-        overflow-y: scroll;
         width: 100%;
         height: 100%;
         animation-name: fading;
         animation-timing-function: ease-in;
         animation-duration: 1s;
         scrollbar-width: none;
-        overflow: scroll;
+        overflow: hidden;
     }
 }
 
-@media (max-width: 1057px) {
+@media (max-width: 1058px) {
     #scroll-label {
         display: block;
         position: fixed;
@@ -86,27 +79,7 @@
     }
 }
 
-@media (min-width: 1058px) {
-    .content-container-about-me,
-    .links-container {
-        background-image: url("https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif");
-        background-size: cover;
-        display: block;
-        text-align: center;
-        padding-top: 5%;
-        position: absolute;
-        overflow-y: hidden;
-        width: 100%;
-        height: 100%;
-        animation-name: fading;
-        animation-timing-function: ease-in;
-        animation-duration: 1s;
-        scrollbar-width: none;
-        overflow: hidden;
-    }
-}
-
-@media (max-height: 817px) {
+@media (max-height: 832px) {
     #scroll-label {
         display: block;
         position: fixed;
@@ -120,7 +93,7 @@
         font-weight: bold;
         color: #e9afd3;
     }
-    
+
     .content-container-about-me,
     .links-container {
         background-image: url("https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif");
@@ -137,26 +110,6 @@
         animation-duration: 1s;
         scrollbar-width: none;
         overflow-x: hidden;
-    }
-}
-
-@media (min-height: 818px) {
-    .content-container-about-me,
-    .links-container {
-        background-image: url("https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif");
-        background-size: cover;
-        display: block;
-        text-align: center;
-        padding-top: 5%;
-        position: absolute;
-        overflow-y: hidden;
-        width: 100%;
-        height: 100%;
-        animation-name: fading;
-        animation-timing-function: ease-in;
-        animation-duration: 1s;
-        scrollbar-width: none;
-        overflow: hidden;
     }
 }
 
