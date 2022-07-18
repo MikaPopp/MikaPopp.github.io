@@ -6,15 +6,17 @@ $(document).ready(function () {
         $("#navbar-main").removeClass("navbar-light");
     }
     $(document).on('wheel', function (event) {
-        if (event.originalEvent.deltaY !== 0) {
-            if (event.originalEvent.deltaY < 0) {
-                if ($(".links-container").css("opacity") == 1) {
-                    showAboutMe();
+        if (!($(window).height() < 818 || $(window).width() < 1058)) {
+            if (event.originalEvent.deltaY !== 0) {
+                if (event.originalEvent.deltaY < 0) {
+                    if ($(".links-container").css("opacity") == 1) {
+                        showAboutMe();
+                    }
                 }
-            }
-            else {
-                if ($(".content-container-about-me").css("opacity") == 1) {
-                    showLinks();
+                else {
+                    if ($(".content-container-about-me").css("opacity") == 1) {
+                        showLinks();
+                    }
                 }
             }
         }

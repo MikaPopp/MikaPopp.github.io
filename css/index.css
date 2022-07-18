@@ -22,9 +22,141 @@
     }
 }
 
+@media (min-width: 992px) {
+    #scroll-label {
+        display: none;
+    }
+}
+
 @media (max-width: 991px) {
     .content-container-about-me {
         margin-top: 5%;
+    }
+
+    .content-container-about-me,
+    .links-container {
+        background-image: url("https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif");
+        background-size: cover;
+        display: block;
+        text-align: center;
+        padding-top: 5%;
+        position: absolute;
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+        animation-name: fading;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        scrollbar-width: none;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 1057px) {
+    #scroll-label {
+        display: block;
+        position: fixed;
+        bottom: 10px;
+        right: 0px;
+        background-color: rgb(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        font-weight: bold;
+        color: #e9afd3;
+    }
+
+    .content-container-about-me,
+    .links-container {
+        background-image: url("https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif");
+        background-size: cover;
+        display: block;
+        text-align: center;
+        padding-top: 5%;
+        position: absolute;
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+        animation-name: fading;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        scrollbar-width: none;
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 1058px) {
+    .content-container-about-me,
+    .links-container {
+        background-image: url("https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif");
+        background-size: cover;
+        display: block;
+        text-align: center;
+        padding-top: 5%;
+        position: absolute;
+        overflow-y: hidden;
+        width: 100%;
+        height: 100%;
+        animation-name: fading;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        scrollbar-width: none;
+        overflow: hidden;
+    }
+}
+
+@media (max-height: 817px) {
+    #scroll-label {
+        display: block;
+        position: fixed;
+        bottom: 10px;
+        right: 0px;
+        background-color: rgb(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        font-weight: bold;
+        color: #e9afd3;
+    }
+    
+    .content-container-about-me,
+    .links-container {
+        background-image: url("https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif");
+        background-size: cover;
+        display: block;
+        text-align: center;
+        padding-top: 5%;
+        position: absolute;
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+        animation-name: fading;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        scrollbar-width: none;
+        overflow-x: hidden;
+    }
+}
+
+@media (min-height: 818px) {
+    .content-container-about-me,
+    .links-container {
+        background-image: url("https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif");
+        background-size: cover;
+        display: block;
+        text-align: center;
+        padding-top: 5%;
+        position: absolute;
+        overflow-y: hidden;
+        width: 100%;
+        height: 100%;
+        animation-name: fading;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        scrollbar-width: none;
+        overflow: hidden;
     }
 }
 
@@ -35,20 +167,6 @@
     animation: moving 4s;
     animation-delay: 4s;
     animation-timing-function: ease-in-out;
-    background-color: rgb(0, 0, 0, 0.5);
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    font-weight: bold;
-    color: #e9afd3;
-}
-
-#scroll-label {
-    display: block;
-    position: fixed;
-    bottom: 10px;
-    right: 0px;
     background-color: rgb(0, 0, 0, 0.5);
     background-repeat: no-repeat;
     border: none;
@@ -83,29 +201,15 @@
     animation-duration: 1s;
 }
 
-.content-container-about-me,
-.links-container {
-    background-image: url("https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif");
-    background-size: cover;
-    display: block;
-    text-align: center;
-    padding-top: 5%;
-    position: absolute;
-    overflow-y: scroll;
-    width: 100%;
-    height: 100%;
-    animation-name: fading;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-    scrollbar-width: none;
-    overflow: hidden;
-}
-
 .links-container {
     padding-top: 7%;
 }
 
 .content-container-about-me::-webkit-scrollbar {
+    display: none;
+}
+
+.links-container::-webkit-scrollbar {
     display: none;
 }
 
@@ -178,6 +282,12 @@
 
 .container-round-links-two {
     margin-top: 1%;
+    width: auto;
+    height: auto;
+}
+
+.container-round-links {
+    max-height: 350px;
 }
 
 .link-one,
