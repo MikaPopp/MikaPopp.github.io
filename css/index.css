@@ -264,3 +264,12 @@
     width: 350px;
     padding-top: 0.3%;
 }
+
+.social-media-links .rounded-circle {
+    margin-left: 1%;
+    background-color: #797a7a;
+}
+
+.social-media-links {
+    margin-right: 1%;
+}
